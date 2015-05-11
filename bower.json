@@ -1,0 +1,30 @@
+{
+  "name": "real-estate",
+  "version": "0.0.1",
+  "authors": [
+    "Yogesh Kumar <yoku2010@gmail.com>"
+  ],
+  "description": "real estate theme",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "1.11.3",
+    "bootstrap": "3.3.4",
+    "components-font-awesome": "~4.3.0"
+  }
+}
