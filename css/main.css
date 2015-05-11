@@ -34,6 +34,7 @@ h1 {
 
 .navbar .navbar-nav>li>a {
     color: #FFF;
+    background-color: transparent;
 }
 .navbar .navbar-nav>li.active>a,
 .navbar .navbar-nav>li:hover>a,
