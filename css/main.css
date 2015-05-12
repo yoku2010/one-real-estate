@@ -71,7 +71,6 @@ f.body {
     color: #585858;
     font-size: 28px;
     text-transform: none;
-    background: url("../images/heading-bg.png") 50% 50% repeat-x;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -139,6 +138,7 @@ f.body {
     border-radius: 5px;
     border: 1px solid #f0f0f0;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 .re-box div.img-div {
     height: 242px;
@@ -204,12 +204,8 @@ f.body {
 .home-section {
     margin-bottom: 30px;
 }
-.text-box {
-
-}
 .text-box-head {
     background-color: #EAEAEA;
-    height: 40px;
     padding: 9px 0px 9px 13px;
     font-size: 16px;
     margin-bottom: 13px;
@@ -230,4 +226,81 @@ f.body {
     font-size: 20px;
     padding: 10px;
     width: 80%;
+}
+.sub-heading-section {
+    background-color: #FFB74D;
+    margin-top: 50px;
+    color: #FFF;
+    font-size: 16px;
+}
+.sub-heading {
+    padding: 10px 0 0;
+}
+.text-box-img-box {
+    float: left;
+    background-color: #FFF;
+    margin: 0 10px 10px 0;
+    overflow: hidden; 
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+}
+.text-box-img {
+    height: 180px;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 4px solid #FFB74D;
+}
+.text-box-img img {
+    width: 264px;
+}
+.text-box-foot {
+    background-color: #EEE;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+hr {
+    border-top: 2px solid #EAEAEA;
+}
+.hashtag-navgation {
+    margin-top: 50px;
+}
+a.foot-link {
+    color: #72777F;
+    text-decoration: none;
+}
+a.foot-link:hover {
+    color: #FFB74D;
+}
+.map-box-head {
+    background-color: #EAEAEA;
+    padding: 9px 0px 9px 13px;
+    font-size: 16px;
+    color: #434a54;
+    font-weight: bold;
+    border: 1px solid #DADADA;
+    text-align: center;
+}
+.map figure {
+    position: relative;
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.map figure iframe {
+  width: 100%;
+  height: 350px;
+  max-width: 100%;
+  border: 0;
+}
+.form-control, input[type='text'], input[type='email'], input[type='number'], input[type='password'], textarea, select {
+    border: 1px solid #CCC;
+    border-bottom: 3px solid #CCC;
+    padding: 15px;
+    height: auto;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
 }
