@@ -11,7 +11,9 @@
         <link rel="icon" href="img/favicon.ico" type="img/icon" sizes="16x16">
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="https://cdn.firebase.com/js/client/1.1.0/firebase.js"></script>
+        <script type="text/javascript" src="js/contactus.js"></script>
     </head>
      <body>
         <header class="nav-header">
@@ -28,7 +30,7 @@
                                         <span class="icon-bar orange"></span>
                                     </button>
                                     <a class="navbar-brand" href="index.html">
-                                        <span class="orange">REAL</span><span class="white">ESTATE</span>
+                                        <img src="img/logo.jpg"/>
                                     </a>
                                 </div>
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9" nav-collapse="">
@@ -77,41 +79,51 @@
                             <div class="col-md-8">
                                 <h4>Request Form</h4>
                                 <p>If you have any questions please do not hesitate to get in contact with us. Simply fill-out the form. below and a representative of the company will contact you shortly.</p>
-                                <form>
+                                <div id="error_msg" class="alert alert-danger" style="display:none;" role="alert">
+                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                    <span class="sr-only">Error:</span>
+                                    Submitted form is invalid.
+                                </div>
+                                <div id="success_msg" class="alert alert-success" style="display:none;" role="alert">
+                                    <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                                    <span class="sr-only">Success:</span>
+                                    Your request is submitted successfully.
+                                </div>
+                                <form action="" method="post" id="contact_us_form">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Name (Required):">
+                                                <input type="text" name="n" class="form-control" placeholder="Name (Required):">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Telephone:">
+                                                <input type="text" name="tp" class="form-control" placeholder="Telephone:">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Email (Required):">
+                                                <input type="text" name="e" class="form-control" placeholder="Email (Required):">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Subject:">
+                                                <input type="text" name="s" class="form-control" placeholder="Subject:">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <textarea class="form-control" placeholder="Message:" rows="10"></textarea>
+                                                <textarea class="form-control" name="m" placeholder="Message:" rows="10"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12 text-right">
-                                            <button type="button" class="btn btn-warning">Contact Us Today!</button>
+                                            <button type="submit" class="btn btn-warning">Contact Us Today!</button>
                                         </div>
                                     </div>
                                 </form>

@@ -23,8 +23,11 @@
     "tests"
   ],
   "devDependencies": {
-    "jquery": "1.11.3",
-    "bootstrap": "3.3.4",
-    "components-font-awesome": "~4.3.0"
+    "jquery": "~1.11.3",
+    "bootstrap": "~3.3.4",
+    "components-font-awesome": "~4.3.0",
+    "jquery-validation": "~1.13.1",
+    "jquery-cookie": "~1.4.1",
+    "datatables": "~1.10.7"
   }
 }
