@@ -1,7 +1,7 @@
 $(function() {
     var $form = $("#contact_us_form"),
     fb = new Firebase("https://real-estate-network.firebaseio.com"),
-    $errorMsg = $('#error_msg'), $successMsg = $('#success_msg'), timeObj = null;
+    $msg = $('#msg');
     $form.validate({
         rules: {
             n: {
@@ -23,22 +23,25 @@ $(function() {
         },
         submitHandler: function (form) {
             var dataArr = $(form).serializeArray(), dataJson = {};
-            timeObj && timeObj.clearTimeout();
             for(var d in dataArr) {
                 dataJson[dataArr[d]['name']] = dataArr[d]['value'];
             }
             dataJson['t'] = (new Date()).getTime();
             fb.push(dataJson);
             form.reset();
-            $errorMsg.hide();
-            $successMsg.show();
-            timeObj = setTimeout(function() {
-                $successMsg.slideUp();
-            }, 8000);
+            $msg.message({
+                type: 'success',
+                html: 'Your request is submitted successfully.',
+                autoHide: 4000
+            });
+            return false;
         },
         invalidHandler: function (event, validator) {
-            $errorMsg.show();
-            $successMsg.hide();
+            $msg.message({
+                type: 'danger',
+                html: 'Submitted form is invalid.',
+                autoHide: 4000
+            });
         }
     });
 });

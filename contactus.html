@@ -7,12 +7,14 @@
         <link rel="stylesheet" type="text/css" media="all" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="bower_components/components-font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="css/full-slider.css">
+        <link rel="stylesheet" type="text/css" media="all" href="css/jquery.bs.message.min.css">
         <link rel="stylesheet" type="text/css" media="all" href="css/main.css">
         <link rel="icon" href="img/favicon.ico" type="img/icon" sizes="16x16">
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
         <script src="https://cdn.firebase.com/js/client/1.1.0/firebase.js"></script>
+        <script type="text/javascript" src="js/jquery.bs.message.min.js"></script>
         <script type="text/javascript" src="js/contactus.js"></script>
     </head>
      <body>
@@ -79,16 +81,7 @@
                             <div class="col-md-8">
                                 <h4>Request Form</h4>
                                 <p>If you have any questions please do not hesitate to get in contact with us. Simply fill-out the form. below and a representative of the company will contact you shortly.</p>
-                                <div id="error_msg" class="alert alert-danger" style="display:none;" role="alert">
-                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                                    <span class="sr-only">Error:</span>
-                                    Submitted form is invalid.
-                                </div>
-                                <div id="success_msg" class="alert alert-success" style="display:none;" role="alert">
-                                    <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
-                                    <span class="sr-only">Success:</span>
-                                    Your request is submitted successfully.
-                                </div>
+                                <div id="msg"></div>
                                 <form action="" method="post" id="contact_us_form">
                                     <div class="row">
                                         <div class="col-md-6">
