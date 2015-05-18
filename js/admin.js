@@ -315,12 +315,14 @@ $(function() {
                         md.func.contactDataTable();
                         opt.$changePassword.removeClass('active');
                         opt.$admin.addClass('active');
+                        md.func.autoHidenavInMobile();
                     });
                     opt.$changePassword.find('>a').click(function (e) {
                         e.preventDefault();
                         md.func.changePasswordForm();
                         opt.$changePassword.addClass('active');
                         opt.$admin.removeClass('active');
+                        md.func.autoHidenavInMobile();
                     });
                     opt.$logout.find('>a').click(function (e) {
                         e.preventDefault();
@@ -328,7 +330,13 @@ $(function() {
                         md.func.redirectToLogin();
                         opt.$changePassword.removeClass('active');
                         opt.$admin.addClass('active');
+                        md.func.autoHidenavInMobile();
                     });
+                },
+                autoHidenavInMobile: function () {
+                    if ($(".navbar-collapse").is(":visible") && $(".navbar-toggle").is(":visible") ) {
+                        $('.navbar-collapse').collapse('toggle');
+                    }
                 }
             }
         };
