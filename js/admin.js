@@ -174,7 +174,7 @@ $(function() {
                     $r = $('<div></div>').addClass('row');
                     $c = $('<div></div>').addClass('col-md-12');
                     $fg = $('<div></div>').addClass('form-group text-right');
-                    $('<button></button>').attr({'type': 'submit'}).text('Login').addClass('btn btn-warning').appendTo($fg);
+                    $('<button></button>').attr({'type': 'submit'}).text('Login').addClass('btn btn-success').appendTo($fg);
                     $fg.appendTo($c.appendTo($r.appendTo($form)));
 
                     $form.validate({
@@ -251,7 +251,7 @@ $(function() {
                         $r = $('<div></div>').addClass('row');
                         $c = $('<div></div>').addClass('col-md-12');
                         $fg = $('<div></div>').addClass('form-group text-right');
-                        $('<button></button>').attr({'type': 'submit'}).text('Submit').addClass('btn btn-warning').appendTo($fg);
+                        $('<button></button>').attr({'type': 'submit'}).text('Submit').addClass('btn btn-success').appendTo($fg);
                         $fg.appendTo($c.appendTo($r.appendTo($form)));
 
                         $form.validate({

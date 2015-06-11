@@ -16,7 +16,7 @@ a {
     color: #FFF;
 }
 a:hover {
-    color: #FFB74D;
+    color: #55A90D;
 }
 h1 {
     color: #222;
@@ -28,7 +28,7 @@ h1 {
     background: #282D33 ;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
     margin-bottom: 0px;
-    border-bottom: 1px solid #FFB74D;
+    border-bottom: 1px solid #55A90D;
     border-radius:0px;
 }
 
@@ -40,7 +40,7 @@ h1 {
 .navbar .navbar-nav>li:hover>a,
 .navbar .navbar-nav>li>a:hover {
     background-color: transparent;
-    color: #FFB74D;
+    color: #55A90D;
 }
 .navbar a.navbar-brand, .navbar a.navbar-brand:active, .navbar a.navbar-brand:hover {
     color: #FFF;
@@ -51,13 +51,13 @@ h1 {
   width: 130px;
 }
 .navbar .navbar-toggle .icon-bar {
-    background-color: #FFB74D;
+    background-color: #55A90D;
 }
 .header {
     position: relative;
     padding: 0px;
     margin-bottom: 20px;
-    background-color: #FFB74D;
+    background-color: #55A90D;
     color: #FFF;
     height: 500px;
 }
@@ -122,10 +122,10 @@ f.body {
 
 /* custom theme */
 .orange {
-    color: #FFB74D;
+    color: #55A90D;
 }
 .bg-orange {
-    background-color: #FFB74D;
+    background-color: #55A90D;
 }
 
 .white {
@@ -148,7 +148,7 @@ f.body {
     height: 242px;
     overflow: hidden;
     text-align: center;
-    border-bottom: 4px solid #FFB74D;
+    border-bottom: 4px solid #55A90D;
 }
 .re-box div.img-div img{
     width: 358px;
@@ -161,12 +161,12 @@ f.body {
     margin: 0 10px;
     padding: 10px;
     font-size: 15px;
-    color: #FFB74D;
+    color: #55A90D;
     text-align: center;
     border-top: 1px solid #F0F0F0;
 }
 .re-box .re-box-foot a {
-    color: #FFB74D;
+    color: #55A90D;
     text-decoration: none;
     font-weight: bold;
 }
@@ -187,7 +187,7 @@ f.body {
 }
 .social-media a:hover {
     color: #FFF;
-    background-color: #FFB74D;
+    background-color: #55A90D;
 }
 .social-media a i {
     font-size: 19px;
@@ -202,7 +202,7 @@ f.body {
     color: #FAFAFA;
 }
 .quote-section blockquote {
-    border-left: 5px solid #FFB74D;
+    border-left: 5px solid #55A90D;
     font-style: italic;
 }
 .home-section {
@@ -225,14 +225,14 @@ f.body {
     text-shadow:none;
 }
 .carousel-caption.bar div {
-    background-color: #FFB74D;
+    background-color: #55A90D;
     color: #FFF;
     font-size: 20px;
     padding: 10px;
     width: 80%;
 }
 .sub-heading-section {
-    background-color: #FFB74D;
+    background-color: #55A90D;
     margin-top: 50px;
     color: #FFF;
     font-size: 16px;
@@ -252,7 +252,7 @@ f.body {
     height: 180px;
     overflow: hidden;
     text-align: center;
-    border-bottom: 4px solid #FFB74D;
+    border-bottom: 4px solid #55A90D;
 }
 .text-box-img img {
     width: 264px;
@@ -274,7 +274,7 @@ a.foot-link {
     text-decoration: none;
 }
 a.foot-link:hover {
-    color: #FFB74D;
+    color: #55A90D;
 }
 .map-box-head {
     background-color: #EAEAEA;
