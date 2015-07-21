@@ -321,6 +321,7 @@ table.dtable {
     border-collapse: separate;
     border-spacing: 0 5px;
     position: relative;
+    clear:both;
 }
     table.dtable>thead>tr>th {
         color: #333;
